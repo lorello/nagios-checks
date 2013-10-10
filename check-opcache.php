@@ -1,4 +1,9 @@
 <?php
+# TODO: 
+# - manage multiple warn/criticals on different values monitored
+# - add parameters for warn and crit values
+#
+
 # disable cacheing on private/shared caches (varnish?)
 session_cache_limiter('nocache');
 session_start();
