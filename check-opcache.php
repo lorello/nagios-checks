@@ -90,7 +90,7 @@ $opcache_hit_rate_crit  = 0.9;
 if ($opcache_hit_rate < $opcache_hit_rate_crit) {
   $result_status    = 2;
   $result_message   = "CRITICAL - $basic_info memory hitrate is under critical level ".$opcache_hit_rate.'%';
-} elseif ($memory_usage_perc > $memory_usage_perc_warn) {
+} elseif ($opcache_hit_rate < $opcache_hit_rate_warn) {
   $result_status    = 1;
   $result_message   = "WARNING - $basic_info memory hitrate is under warning level ".$opcache_hit_rate.'%';
 }
